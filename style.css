@@ -68,14 +68,19 @@ body { background: var(--bg); }
   box-shadow: 0 4px 20px rgba(180,40,100,.12);
 }
 
-.logo-crown {
-  font-size: 2rem;
-  animation: crownBounce 2s ease-in-out infinite;
-  display: inline-block;
+.logo-img {
+  height: 52px;
+  width:  52px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 8px rgba(208,61,136,.3));
+  transition: transform .3s ease;
 }
-@keyframes crownBounce {
-  0%,100% { transform: translateY(0) rotate(-5deg); }
-  50%      { transform: translateY(-4px) rotate(5deg); }
+.logo-img:hover {
+  transform: scale(1.1) rotate(-4deg);
+}
+@media (max-width: 480px) {
+  .logo-img { height: 42px; width: 42px; }
 }
 .logo-text {
   background: linear-gradient(135deg, #ec4899, #c084fc);
@@ -249,30 +254,45 @@ body { background: var(--bg); }
   background: var(--soft);
   clip-path: ellipse(55% 100% at 50% 100%);
   margin-bottom: -1px;
+  width: 100%;
 }
 .wavy-bot {
   height: 80px;
   background: var(--soft);
   clip-path: ellipse(55% 100% at 50% 0%);
   margin-top: -1px;
+  width: 100%;
 }
 .pricelist-bg {
   background: var(--soft);
-  padding: 60px 16px;
+  padding: 40px 16px;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .pricelist-bg { padding: 40px 24px; }
 }
 
 /* Tabs */
 .tab-btn {
-  padding: 10px 22px;
+  padding: 8px 10px;
   border-radius: 50px;
   font-family: 'Nunito', sans-serif;
-  font-size: .82rem;
+  font-size: 11px;
   font-weight: 800;
   cursor: pointer;
-  border: 2.5px solid rgba(244,114,182,.25);
+  border: 2px solid rgba(244,114,182,.25);
   background: rgba(255,255,255,.7);
   color: var(--muted);
   transition: all .3s;
+  text-align: center;
+  white-space: nowrap;
+}
+@media (min-width: 640px) {
+  .tab-btn {
+    padding: 10px 22px;
+    font-size: .82rem;
+    border-width: 2.5px;
+  }
 }
 .tab-btn:hover { border-color: var(--pink); color: var(--hot); }
 .tab-btn.active {
@@ -281,16 +301,6 @@ body { background: var(--bg); }
   color: #fff;
   box-shadow: 0 4px 16px rgba(236,72,153,.3);
 }
-
-/* Price grid */
-.price-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-@media (min-width: 480px) { .price-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 768px) { .price-grid { grid-template-columns: repeat(4, 1fr); } }
-@media (min-width: 1024px) { .price-grid { grid-template-columns: repeat(5, 1fr); gap: 14px; } }
 
 .price-card {
   display: flex;

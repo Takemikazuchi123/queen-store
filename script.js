@@ -172,8 +172,9 @@ if (robloxDropdown) {
     
     currentRobloxTab = li.dataset.tab;
     
-    const shortLabel = li.textContent.replace(/[🔐🎮🎁💎]/g, '').trim();
-    robloxTabText.textContent = `🎮 Roblox (${shortLabel})`;
+    // Buang emoji & kata "Via " agar singkat (misal: "Login", "Gamepass")
+    const shortLabel = li.textContent.replace(/[🔐🎮🎁💎]/g, '').replace(/Via /ig, '').trim();
+    robloxTabText.textContent = `Roblox (${shortLabel})`;
     
     showTabContent(currentRobloxTab);
     
