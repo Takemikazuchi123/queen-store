@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Queen Store – Top Up Roblox Murah & Terpercaya</title>
+  <meta name="description" content="Queen Store – Top Up Robux, Mobile Legends, PUBG Mobile, dan Free Fire murah, cepat, dan terpercaya. Anti scam, proses cepat, support 24/7." />
+  <meta name="theme-color" content="#f472b6" />
+  <title>Queen Store – Top Up Game Murah & Terpercaya</title>
+  <!-- CSS dimuat lebih awal agar tidak blocking render -->
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Preconnect font sebelum stylesheet font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700;800&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind dimuat setelah font agar tidak blocking -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -48,7 +53,7 @@
   <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <img src="logo.png" alt="Queen Store" class="logo-img" />
+        <img src="logo_nobg.png" alt="Queen Store Logo" class="logo-crown" style="width:52px;height:52px;object-fit:contain;animation:crownBounce 2s ease-in-out infinite;" />
         <div class="leading-none">
           <div class="font-script text-2xl logo-text">Queen Store</div>
           <div class="text-xs tracking-widest" style="color:#f472b6; font-weight:700; letter-spacing:.25em;">
@@ -90,7 +95,7 @@
 
       <!-- Headline -->
       <h1 class="hero-title mb-6">
-        <span class="block font-display text-5xl sm:text-7xl" style="color:#ec4899; font-style:italic; line-height:1.1;">Top Up Game</span>
+        <span class="block font-display text-5xl sm:text-7xl" style="color:#ec4899; font-style:italic; line-height:1.1;">Top Up Robux</span>
         <span class="block font-script text-4xl sm:text-6xl title-shadow" style="color:#c084fc; margin-top:4px;">Murah & Cepat~</span>
       </h1>
 
@@ -98,7 +103,7 @@
         💖 Harga Terjangkau &nbsp;·&nbsp; 🚀 Proses Cepat &nbsp;·&nbsp; 🛡️ Aman Terpercaya
       </p>
       <p class="text-sm mb-10 max-w-lg mx-auto" style="color:#c09aaa;">
-        Layanan top up Roblox terbaik dengan ribuan pelanggan puas. Kepercayaan kamu adalah prioritas Queen Store! 💕
+        Layanan top up game terbaik dengan ratusan pelanggan puas. Kepercayaan kamu adalah prioritas Queen Store! 💕
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-14">
@@ -106,61 +111,53 @@
         <a href="#pricelist" class="btn-outline px-10 py-4 text-base">🌸 Lihat Harga</a>
       </div>
 
-      <!-- Stats -->
-      <div class="grid grid-cols-3 gap-4 max-w-md mx-auto">
-        <div class="stat-card p-4 rounded-3xl text-center">
-          <div class="stat-number">5K+</div>
-          <div class="stat-label">Transaksi</div>
-        </div>
-        <div class="stat-card p-4 rounded-3xl text-center">
-          <div class="stat-number" style="color:#c084fc;">100%</div>
-          <div class="stat-label">Aman</div>
-        </div>
-        <div class="stat-card p-4 rounded-3xl text-center">
-          <div class="stat-number">24/7</div>
-          <div class="stat-label">Support</div>
-        </div>
-      </div>
+
     </div>
   </section>
 
   <!-- ===== PRICELIST ===== -->
-  <section id="pricelist" class="relative">
+  <section id="pricelist" class="relative py-10 sm:py-24">
     <!-- Wavy divider top -->
     <div class="wavy-top" aria-hidden="true"></div>
     <div class="pricelist-bg">
 
-      <div class="max-w-7xl mx-auto px-2 sm:px-6">
-        <div class="text-center mb-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-8 sm:mb-12">
           <p class="text-sm font-bold tracking-widest mb-2" style="color:#f472b6;">— 🌸 HARGA SPESIAL 🌸 —</p>
           <h2 class="font-display text-3xl sm:text-4xl font-bold mb-3" style="color:#5a2d4c; font-style:italic;">Daftar Harga</h2>
           <p class="text-sm" style="color:#b07090;">Pilih metode yang kamu mau, harga sudah termasuk layanan ya~ 💕</p>
         </div>
 
-        <!-- Tabs -->
-        <div class="flex justify-center gap-2 sm:gap-3 mb-10 relative z-40 px-1 sm:px-0">
-          <!-- Roblox Dropdown Tab -->
-          <div class="relative" id="roblox-tab-container">
-            <button id="roblox-tab-btn" class="main-tab-btn tab-btn active flex items-center justify-center gap-1.5 sm:gap-2" data-target="roblox">
-              <span>🎮</span>
-              <span id="roblox-tab-text">Roblox (Login)</span>
-              <span id="roblox-tab-arrow" class="dropdown-arrow transition-transform duration-300 leading-none">▾</span>
-            </button>
-            <ul id="roblox-dropdown" class="custom-options hidden absolute top-full left-0 mt-1 min-w-full whitespace-nowrap z-50 bg-white border-2 border-[#ffe8f0] rounded-2xl overflow-hidden shadow-lg shadow-pink-100/30 text-[#5a2d4c] text-xs sm:text-sm font-semibold text-left">
-              <li class="px-4 sm:px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors border-b border-[#ffe8f0]" data-tab="login">🔐 Via Login</li>
-              <li class="px-4 sm:px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors border-b border-[#ffe8f0]" data-tab="gamepass">🎮 Via Gamepass</li>
-              <li class="px-4 sm:px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors" data-tab="gift">🎁 Via Gift Card</li>
-            </ul>
-          </div>
+        <!-- Tabs — scrollable on mobile -->
+        <div class="mb-8 sm:mb-10 relative z-40">
+          <div class="flex gap-2 sm:gap-3 sm:justify-center overflow-x-auto pb-2 sm:pb-0 px-1 sm:px-0 tab-scroll-row" style="scrollbar-width:none; -ms-overflow-style:none;">
+            <!-- Roblox Dropdown Tab -->
+            <div class="relative flex-shrink-0" id="roblox-tab-container">
+              <button id="roblox-tab-btn" class="main-tab-btn tab-btn active flex items-center justify-center gap-1.5" data-target="roblox" style="white-space:nowrap;">
+                <span>🎮</span>
+                <span id="roblox-tab-text">Roblox</span>
+                <span id="roblox-tab-arrow" class="dropdown-arrow transition-transform duration-300 leading-none">▾</span>
+              </button>
+              <ul id="roblox-dropdown" class="custom-options hidden absolute top-full left-0 mt-1 min-w-full whitespace-nowrap z-50 bg-white border-2 border-[#ffe8f0] rounded-2xl overflow-hidden shadow-lg shadow-pink-100/30 text-[#5a2d4c] text-xs sm:text-sm font-semibold text-left">
+                <li class="px-4 sm:px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors border-b border-[#ffe8f0]" data-tab="login">🔐 Via Login</li>
+                <li class="px-4 sm:px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors border-b border-[#ffe8f0]" data-tab="gamepass">🎮 Via Gamepass</li>
+                <li class="px-4 sm:px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors" data-tab="gift">🎁 Via Gift Card</li>
+              </ul>
+            </div>
 
-          <button id="mlbb-tab-btn" class="main-tab-btn tab-btn flex items-center justify-center gap-1.5 sm:gap-2" data-target="mlbb">
-            <span>💎</span>
-            <span>Mobile Legends</span>
-          </button>
-          <button id="pubg-tab-btn" class="main-tab-btn tab-btn flex items-center justify-center gap-1.5 sm:gap-2" data-target="pubg_id">
-            <span>🔫</span>
-            <span>PUBG Mobile</span>
-          </button>
+            <button id="mlbb-tab-btn" class="main-tab-btn tab-btn flex-shrink-0 flex items-center justify-center gap-1.5" data-target="mlbb" style="white-space:nowrap;">
+              <span>💎</span>
+              <span>ML</span>
+            </button>
+            <button id="pubg-tab-btn" class="main-tab-btn tab-btn flex-shrink-0 flex items-center justify-center gap-1.5" data-target="pubg_id" style="white-space:nowrap;">
+              <span>🔫</span>
+              <span>PUBG</span>
+            </button>
+            <button id="ff-tab-btn" class="main-tab-btn tab-btn flex-shrink-0 flex items-center justify-center gap-1.5" data-target="free_fire" style="white-space:nowrap;">
+              <span>🔥</span>
+              <span>Free Fire</span>
+            </button>
+          </div>
         </div>
 
         <!-- TAB: LOGIN -->
@@ -266,6 +263,37 @@
           </div>
         </div>
 
+        <!-- TAB: FREE FIRE -->
+        <div id="tab-free_fire" class="tab-content w-full hidden">
+          <div class="note-cute w-full mb-8 px-5 py-4 rounded-3xl flex gap-3 items-start">
+            <span class="text-2xl">📌</span>
+            <div>
+              <p class="font-bold text-sm mb-1" style="color:#ec4899;">Catatan Free Fire</p>
+              <p class="text-sm" style="color:#b07090;">Pastikan <span class="font-bold" style="color:#ec4899;">User ID</span> kamu sudah benar ya kak~ Diamond auto masuk secepat kilat! ⚡🎀</p>
+            </div>
+          </div>
+          <div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
+            <div class="price-card" data-robux="5" data-price="1000"><span class="r-amount">5</span><span class="r-icon">💎</span><span class="r-price">Rp 1.000</span></div>
+            <div class="price-card" data-robux="12" data-price="2000"><span class="r-amount">12</span><span class="r-icon">💎</span><span class="r-price">Rp 2.000</span></div>
+            <div class="price-card" data-robux="20" data-price="3500"><span class="r-amount">20</span><span class="r-icon">💎</span><span class="r-price">Rp 3.500</span></div>
+            <div class="price-card" data-robux="50" data-price="7000"><span class="r-amount">50</span><span class="r-icon">💎</span><span class="r-price">Rp 7.000</span></div>
+            <div class="price-card" data-robux="70" data-price="9500"><span class="r-amount">70</span><span class="r-icon">💎</span><span class="r-price">Rp 9.500</span></div>
+            <div class="price-card" data-robux="100" data-price="13500"><span class="r-amount">100</span><span class="r-icon">💎</span><span class="r-price">Rp 13.500</span></div>
+            <div class="price-card" data-robux="140" data-price="18500"><span class="r-amount">140</span><span class="r-icon">💎</span><span class="r-price">Rp 18.500</span></div>
+            <div class="price-card" data-robux="210" data-price="27500"><span class="r-amount">210</span><span class="r-icon">💎</span><span class="r-price">Rp 27.500</span></div>
+            <div class="price-card" data-robux="355" data-price="46000"><span class="r-amount">355</span><span class="r-icon">💎</span><span class="r-price">Rp 46.000</span></div>
+            <div class="price-card" data-robux="500" data-price="65000"><span class="r-amount">500</span><span class="r-icon">💎</span><span class="r-price">Rp 65.000</span></div>
+            <div class="price-card" data-robux="720" data-price="91500"><span class="r-amount">720</span><span class="r-icon">💎</span><span class="r-price">Rp 91.500</span></div>
+            <div class="price-card" data-robux="860" data-price="110000"><span class="r-amount">860</span><span class="r-icon">💎</span><span class="r-price">Rp 110.000</span></div>
+            <div class="price-card" data-robux="1000" data-price="128000"><span class="r-amount">1.000</span><span class="r-icon">💎</span><span class="r-price">Rp 128.000</span></div>
+            <div class="price-card" data-robux="1440" data-price="183000"><span class="r-amount">1.440</span><span class="r-icon">💎</span><span class="r-price">Rp 183.000</span></div>
+            <div class="price-card" data-robux="2000" data-price="256000"><span class="r-amount">2.000</span><span class="r-icon">💎</span><span class="r-price">Rp 256.000</span></div>
+            <div class="price-card" data-robux="Weekly Lite" data-price="17000"><span class="r-amount" style="font-size: 1.1rem;">Weekly Lite</span><span class="r-icon">✨</span><span class="r-price">Rp 17.000</span></div>
+            <div class="price-card" data-robux="Membership Mingguan" data-price="28000"><span class="r-amount" style="font-size: 0.85rem;">Member Mingguan</span><span class="r-icon">✨</span><span class="r-price">Rp 28.000</span></div>
+            <div class="price-card" data-robux="Membership Bulanan" data-price="83500"><span class="r-amount" style="font-size: 0.85rem;">Member Bulanan</span><span class="r-icon">✨</span><span class="r-price">Rp 83.500</span></div>
+          </div>
+        </div>
+
         <!-- TAB: PUBG -->
         <div id="tab-pubg_id" class="tab-content w-full hidden">
           <div class="note-cute w-full mb-8 px-5 py-4 rounded-3xl flex gap-3 items-start">
@@ -319,13 +347,15 @@
           <ul id="gameOptions" class="custom-options hidden absolute left-0 right-0 z-50 bg-white border-2 border-[#ffe8f0] rounded-2xl mt-2 overflow-hidden shadow-lg shadow-pink-100/30 max-h-60 overflow-y-auto text-[#5a2d4c] text-sm font-semibold">
             <li class="px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors border-b border-[#ffe8f0]" data-value="roblox">🎮 Roblox</li>
             <li class="px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors border-b border-[#ffe8f0]" data-value="mlbb">💎 Mobile Legends</li>
-            <li class="px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors" data-value="pubg_id">🔫 PUBG Mobile (Via ID)</li>
+            <li class="px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors border-b border-[#ffe8f0]" data-value="pubg_id">🔫 PUBG Mobile (Via ID)</li>
+            <li class="px-5 py-3 hover:bg-[#fff5f8] cursor-pointer transition-colors" data-value="free_fire">🔥 Free Fire (Via ID)</li>
           </ul>
           <select id="game" class="hidden">
             <option value="">— Pilih Game —</option>
             <option value="roblox">🎮 Roblox</option>
             <option value="mlbb">💎 Mobile Legends</option>
             <option value="pubg_id">🔫 PUBG Mobile (Via ID)</option>
+            <option value="free_fire">🔥 Free Fire (Via ID)</option>
           </select>
         </div>
 
@@ -418,7 +448,7 @@
   <footer class="py-12 px-4 text-center footer-section">
     <div class="max-w-xl mx-auto">
       <div class="flex items-center justify-center gap-2 mb-3">
-        <img src="logo.png" alt="Queen Store" style="height:48px;width:48px;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(208,61,136,.3));" />
+        <img src="logo_nobg.png" alt="Queen Store Logo" style="width:60px;height:60px;object-fit:contain;" />
         <span class="font-script text-3xl" style="color:#ec4899;">Queen Store</span>
       </div>
       <p class="text-sm mb-5" style="color:#b07090;">Top Up Roblox Murah, Cepat, dan Terpercaya 💕</p>
